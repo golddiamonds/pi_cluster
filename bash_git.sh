@@ -15,3 +15,6 @@ cd $GO_HERE
 cp /home/pi/pi_cluster/bash_git.sh /home/pi/bash_git.sh
 
 chmod 755 bash_git.sh
+
+cd pi_cluster 
+python python_mysql_test.py
