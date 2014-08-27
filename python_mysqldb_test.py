@@ -11,13 +11,13 @@ print ip
 temp = commands.getoutput("/opt/vc/bin/vcgencmd measure_temp")[5:-2]
 print temp
 
-#connect to database
-db = MySQLdb.connect(host="192.168.0.111",user="root",passwd="drowssap",db="pi_cluster")
+##connect to database
+#db = MySQLdb.connect(host="192.168.0.111",user="root",passwd="drowssap",db="pi_cluster")
 
-#create cursor
-curs = db.cursor()
+##create cursor
+#curs = db.cursor()
 
-#insert into the log
-curs.execute("INSERT INTO log (ip, message, temp) VALUES (%s, 'Test', %s)", (str(ip),str(temp),))
+##insert into the log
+#curs.execute("INSERT INTO log (ip, message, temp) VALUES (%s, 'Test', %s)", (str(ip),str(temp),))
 
-db.commit() 
+#db.commit() 
